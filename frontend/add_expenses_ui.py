@@ -3,7 +3,9 @@ from datetime import datetime
 import requests
 import pandas as pd
 
-API_URL = "http://localhost:8000"
+# API_URL = "http://localhost:8000"
+API_URL = "https://expense-tracker-fastapi-backend.onrender.com/"
+
 
 def add_expenses_page():
     st.title("Expense Manager: Add Expenses")

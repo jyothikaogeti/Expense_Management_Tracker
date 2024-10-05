@@ -4,7 +4,9 @@ import pandas as pd
 import requests
 import matplotlib.pyplot as plt
 
-API_URL = "http://localhost:8000"
+# API_URL = "http://localhost:8000"
+API_URL = "https://expense-tracker-fastapi-backend.onrender.com/"
+
 
 def analytics_by_month_page():
     st.title("Analyze Your Expenses By Month")
