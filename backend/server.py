@@ -9,6 +9,12 @@ class Expense(BaseModel):
     category: str
     notes: str
 
+class ExpenseDateRange(BaseModel):
+    expense_date: date
+    amount: float
+    category: str
+    notes: str
+
 class DateRange(BaseModel):
     start_date: date
     end_date: date
@@ -28,7 +34,7 @@ def get_expenses_for_date(expense_date: date):
     return expenses
 
 
-@app.get("/expenses_by_date_range", response_model=List[Expense])
+@app.get("/expenses_by_date_range", response_model=List[ExpenseDateRange])
 def get_expenses_by_date_range(date_range: DateRange):
     expenses = db_helper.fetch_expenses_for_date_range(date_range.start_date, date_range.end_date)
     return expenses
