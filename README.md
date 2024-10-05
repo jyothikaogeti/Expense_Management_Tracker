@@ -28,3 +28,10 @@ The Streamlit frontend is designed for ease of use:
 * Expense Input: Users can input their expenses in an easy-to-use form.
 * Expense Table: View and filter all expenses in a table format.
 * Visualization: Analyze expenses through graphical representations and charts.
+
+## Expense Management System
+This is a web app for tracking and managing expenses. Users can easily enter their daily spending, sort expenses by category, and see their spending habits over time.You can check it out here:
+[Visit the Expense Management App](https://expense-management-tracker.onrender.com/)
+
+### Web App Preview
+![Expense Tracking Management Web App](assets/expense_app.png)
